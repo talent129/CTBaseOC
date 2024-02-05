@@ -1,0 +1,78 @@
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - DZNEmptyDataSet (1.8.1)
+  - IQKeyboardManager (6.5.10)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
+  - MJRefresh (3.5.0)
+  - Reachability (3.2)
+  - RTRootNavigationController (0.8.0):
+    - RTRootNavigationController/Core (= 0.8.0)
+  - RTRootNavigationController/Core (0.8.0)
+  - SDWebImage (5.10.4):
+    - SDWebImage/Core (= 5.10.4)
+  - SDWebImage/Core (5.10.4)
+  - Toast (4.0.0)
+  - "UITextView+Placeholder (1.4.0)"
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - AFNetworking (~> 4.0.1)
+  - DZNEmptyDataSet (~> 1.8.1)
+  - IQKeyboardManager (~> 6.5.10)
+  - Masonry (~> 1.1.0)
+  - MBProgressHUD (~> 1.2.0)
+  - MJRefresh (~> 3.5.0)
+  - Reachability (~> 3.2)
+  - RTRootNavigationController (~> 0.8.0)
+  - SDWebImage (~> 5.10.4)
+  - Toast (~> 4.0.0)
+  - "UITextView+Placeholder (~> 1.4.0)"
+  - YYModel (~> 1.0.4)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - DZNEmptyDataSet
+    - IQKeyboardManager
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - Reachability
+    - RTRootNavigationController
+    - SDWebImage
+    - Toast
+    - "UITextView+Placeholder"
+    - YYModel
+
+SPEC CHECKSUMS:
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  IQKeyboardManager: 45a1fa55c1a5b02c61ac0fd7fd5b62bb4ad20d97
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  RTRootNavigationController: 36c6301870f0467f89d69f4286795340b537d473
+  SDWebImage: c666b97e1fa9c64b4909816a903322018f0a9c84
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+  "UITextView+Placeholder": d7b0c400921f66523f3a85d74f774512e14f6502
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: 68df548a59d361cd1893e169d03ed2d68ca48de4
+
+COCOAPODS: 1.12.1

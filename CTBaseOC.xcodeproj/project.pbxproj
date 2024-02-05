@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		073F6C9137AE025C7883460A /* Pods_CTBaseOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 328CDD853A37BF87BD769215 /* Pods_CTBaseOC.framework */; };
 		E97D67222B6FCC7600C12C81 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E97D67212B6FCC7600C12C81 /* AppDelegate.m */; };
 		E97D67252B6FCC7600C12C81 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E97D67242B6FCC7600C12C81 /* SceneDelegate.m */; };
 		E97D67282B6FCC7600C12C81 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97D67272B6FCC7600C12C81 /* ViewController.m */; };
@@ -37,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		328CDD853A37BF87BD769215 /* Pods_CTBaseOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CTBaseOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7139CE2D9FAE0E6E1F0405F5 /* Pods-CTBaseOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CTBaseOC.debug.xcconfig"; path = "Target Support Files/Pods-CTBaseOC/Pods-CTBaseOC.debug.xcconfig"; sourceTree = "<group>"; };
+		8648FC96BF74F77C266609C4 /* Pods-CTBaseOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CTBaseOC.release.xcconfig"; path = "Target Support Files/Pods-CTBaseOC/Pods-CTBaseOC.release.xcconfig"; sourceTree = "<group>"; };
 		E97D671D2B6FCC7600C12C81 /* CTBaseOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CTBaseOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E97D67202B6FCC7600C12C81 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E97D67212B6FCC7600C12C81 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -61,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				073F6C9137AE025C7883460A /* Pods_CTBaseOC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		158BDF02D68A6F3FAA01431A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				328CDD853A37BF87BD769215 /* Pods_CTBaseOC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		603A2F22955ACA63D3935591 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7139CE2D9FAE0E6E1F0405F5 /* Pods-CTBaseOC.debug.xcconfig */,
+				8648FC96BF74F77C266609C4 /* Pods-CTBaseOC.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E97D67142B6FCC7600C12C81 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +110,8 @@
 				E97D673B2B6FCC7700C12C81 /* CTBaseOCTests */,
 				E97D67452B6FCC7700C12C81 /* CTBaseOCUITests */,
 				E97D671E2B6FCC7600C12C81 /* Products */,
+				603A2F22955ACA63D3935591 /* Pods */,
+				158BDF02D68A6F3FAA01431A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,9 +167,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E97D674C2B6FCC7700C12C81 /* Build configuration list for PBXNativeTarget "CTBaseOC" */;
 			buildPhases = (
+				BDF94B8A33C124AFB33A2225 /* [CP] Check Pods Manifest.lock */,
 				E97D67192B6FCC7600C12C81 /* Sources */,
 				E97D671A2B6FCC7600C12C81 /* Frameworks */,
 				E97D671B2B6FCC7600C12C81 /* Resources */,
+				269DB4ACBF5BFDDD3F2A4837 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -263,6 +289,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		269DB4ACBF5BFDDD3F2A4837 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CTBaseOC/Pods-CTBaseOC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CTBaseOC/Pods-CTBaseOC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CTBaseOC/Pods-CTBaseOC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDF94B8A33C124AFB33A2225 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CTBaseOC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E97D67192B6FCC7600C12C81 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -364,7 +432,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -425,7 +493,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -445,6 +513,7 @@
 		};
 		E97D674D2B6FCC7700C12C81 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7139CE2D9FAE0E6E1F0405F5 /* Pods-CTBaseOC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +540,7 @@
 		};
 		E97D674E2B6FCC7700C12C81 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8648FC96BF74F77C266609C4 /* Pods-CTBaseOC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
