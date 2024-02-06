@@ -1,0 +1,33 @@
+//
+//  PrefixHeader.pch
+//  CTBaseOC
+//
+//  Created by Curtis on 2024/2/5.
+//  Copyright © 2024 CT. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+// 默认分页每页条数
+#define kPageSize 10
+
+// 请求超时时间 单位秒
+#define kTimeOut 30
+
+#import "CTCategory.h"
+#import "macro.h"
+#import "CTEnvTool.h"
+#import "CTTool.h"
+#import "CTToastUtil.h"
+#import "CTNetService.h"
+#import "CTUserManager.h"
+#import <Masonry/Masonry.h>
+#import "UIImageView+WebCache.h"
+#import "UIView+Toast.h"
+#import <RTRootNavigationController/RTRootNavigationController.h>
+
+#endif /* PrefixHeader_pch */
