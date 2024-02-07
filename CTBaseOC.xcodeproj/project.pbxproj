@@ -66,6 +66,7 @@
 		E97D68152B7274A400C12C81 /* CTPhotoTake.m in Sources */ = {isa = PBXBuildFile; fileRef = E97D68132B7274A400C12C81 /* CTPhotoTake.m */; };
 		E97D68192B73241800C12C81 /* CTWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97D68182B73241800C12C81 /* CTWebController.m */; };
 		E97D681C2B73242700C12C81 /* CTJSOCWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97D681B2B73242700C12C81 /* CTJSOCWebController.m */; };
+		E97D681F2B7359DB00C12C81 /* CTSettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97D681E2B7359DB00C12C81 /* CTSettingsController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -210,6 +211,8 @@
 		E97D68182B73241800C12C81 /* CTWebController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTWebController.m; sourceTree = "<group>"; };
 		E97D681A2B73242700C12C81 /* CTJSOCWebController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTJSOCWebController.h; sourceTree = "<group>"; };
 		E97D681B2B73242700C12C81 /* CTJSOCWebController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTJSOCWebController.m; sourceTree = "<group>"; };
+		E97D681D2B7359DB00C12C81 /* CTSettingsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTSettingsController.h; sourceTree = "<group>"; };
+		E97D681E2B7359DB00C12C81 /* CTSettingsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTSettingsController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -344,6 +347,8 @@
 			children = (
 				E97D67602B707A7E00C12C81 /* CTMineController.h */,
 				E97D675F2B707A7E00C12C81 /* CTMineController.m */,
+				E97D681D2B7359DB00C12C81 /* CTSettingsController.h */,
+				E97D681E2B7359DB00C12C81 /* CTSettingsController.m */,
 			);
 			path = mine;
 			sourceTree = "<group>";
@@ -882,6 +887,7 @@
 				E97D67E42B707A7F00C12C81 /* CTHTTPSessionManager.m in Sources */,
 				E97D67FD2B7131F300C12C81 /* UITextField+placeholder.m in Sources */,
 				E97D67CB2B707A7F00C12C81 /* CTLoginController.m in Sources */,
+				E97D681F2B7359DB00C12C81 /* CTSettingsController.m in Sources */,
 				E97D67CC2B707A7F00C12C81 /* CTBaseController.m in Sources */,
 				E97D67E82B707A7F00C12C81 /* CTMD5Encrypt.m in Sources */,
 				E97D67332B6FCC7700C12C81 /* main.m in Sources */,

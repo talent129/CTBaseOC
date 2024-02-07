@@ -17,7 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
                     withTarget:(id)target
                     withAction:(SEL)action;
 
-- (void)addNavigationTitleItem:(NSString *)title 
+- (void)addNavigationTitleItem:(NSString *)title
+                     tintColor:(UIColor *)tintColor
                       withLeft:(BOOL)isLeft
                     withTarget:(id)target
                     withAction:(SEL)action;

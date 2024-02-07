@@ -10,10 +10,16 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef NS_ENUM(NSInteger, CTWebDisplayType) {
+    CTWebDisplayTypePush,
+    CTWebDisplayTypePresent
+};
+
 @interface CTWebController : CTBaseController
 
 @property (nonatomic, copy) NSString *urlString;
 @property (nonatomic, copy) NSString *navigationTitle;
+@property (nonatomic, assign) CTWebDisplayType displayType;
 
 @end
 

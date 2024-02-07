@@ -1,5 +1,5 @@
 //
-//  CTJSOCWebController.h
+//  CTSettingsController.h
 //  CTBaseOC
 //
 //  Created by Curtis on 2024/2/7.
@@ -10,10 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CTJSOCWebController : CTBaseController
-
-@property (nonatomic, copy) NSString *urlString;
-@property (nonatomic, copy) NSString *navigationTitle;
+@interface CTSettingsController : CTBaseController
 
 @end
 

@@ -23,10 +23,12 @@
 }
 
 - (void)addNavigationTitleItem:(NSString *)title
+                     tintColor:(UIColor *)tintColor
                       withLeft:(BOOL)isLeft
                     withTarget:(id)target
                     withAction:(SEL)action {
     UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:title style:UIBarButtonItemStylePlain target:target action:action];
+    item.tintColor = tintColor;
     if (isLeft) {
         self.navigationItem.leftBarButtonItem = item;
     } else {

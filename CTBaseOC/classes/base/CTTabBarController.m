@@ -95,13 +95,13 @@
 
 #pragma mark -UITabBarControllerDelegate
 - (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController {
-    NSLog(@"tabBarController:shouldSelectViewController: %@", viewController);
+//    NSLog(@"tabBarController:shouldSelectViewController: %@", viewController);
     return YES;
 }
 
 #pragma mark -UITabBarDelegate
 - (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item {
-    NSLog(@"tabBar:didSelectItem: %@", item);
+//    NSLog(@"tabBar:didSelectItem: %@", item);
 }
 
 @end

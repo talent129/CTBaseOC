@@ -27,6 +27,7 @@
 #import "CTUserManager.h"
 #import <Masonry/Masonry.h>
 #import "UIImageView+WebCache.h"
+#import "CTNavigationController.h"
 #import <RTRootNavigationController/RTRootNavigationController.h>
 
 #endif /* PrefixHeader_pch */
