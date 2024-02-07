@@ -7,6 +7,7 @@
 //
 
 #import "CTToastUtil.h"
+#import "UIView+Toast.h"
 
 @implementation CTToastUtil
 

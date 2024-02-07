@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <AFHTTPSessionManager.h>
 #import "CTInterfaceDefine.h"
+#import <Reachability/Reachability.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

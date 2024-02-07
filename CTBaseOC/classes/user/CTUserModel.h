@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CTUserModel : CTBaseModel
 
+@property (nonatomic, copy) NSString *cc_id;
 @property (nonatomic, copy) NSString *userId;
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *sex;

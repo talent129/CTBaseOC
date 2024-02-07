@@ -10,4 +10,8 @@
 
 @implementation CTUserModel
 
++ (NSDictionary *)modelCustomPropertyMapper {
+    return @{@"cc_id":@"id"};
+}
+
 @end

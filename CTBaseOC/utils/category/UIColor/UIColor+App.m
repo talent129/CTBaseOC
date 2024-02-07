@@ -53,7 +53,7 @@
 }
 
 + (UIColor *)navigationColor {
-    return [UIColor colorWithHexString:@"#55A3F2"];
+    return [UIColor themeColor];
 }
 
 + (UIColor *)navigationTitleColor {

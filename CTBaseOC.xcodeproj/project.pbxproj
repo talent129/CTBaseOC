@@ -64,6 +64,8 @@
 		E97D680F2B7251CA00C12C81 /* UICollectionViewCell+identifier.m in Sources */ = {isa = PBXBuildFile; fileRef = E97D680E2B7251CA00C12C81 /* UICollectionViewCell+identifier.m */; };
 		E97D68122B72520B00C12C81 /* UIButton+countDown.m in Sources */ = {isa = PBXBuildFile; fileRef = E97D68112B72520B00C12C81 /* UIButton+countDown.m */; };
 		E97D68152B7274A400C12C81 /* CTPhotoTake.m in Sources */ = {isa = PBXBuildFile; fileRef = E97D68132B7274A400C12C81 /* CTPhotoTake.m */; };
+		E97D68192B73241800C12C81 /* CTWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97D68182B73241800C12C81 /* CTWebController.m */; };
+		E97D681C2B73242700C12C81 /* CTJSOCWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97D681B2B73242700C12C81 /* CTJSOCWebController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -204,6 +206,10 @@
 		E97D68112B72520B00C12C81 /* UIButton+countDown.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+countDown.m"; sourceTree = "<group>"; };
 		E97D68132B7274A400C12C81 /* CTPhotoTake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTPhotoTake.m; sourceTree = "<group>"; };
 		E97D68142B7274A400C12C81 /* CTPhotoTake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTPhotoTake.h; sourceTree = "<group>"; };
+		E97D68172B73241800C12C81 /* CTWebController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTWebController.h; sourceTree = "<group>"; };
+		E97D68182B73241800C12C81 /* CTWebController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTWebController.m; sourceTree = "<group>"; };
+		E97D681A2B73242700C12C81 /* CTJSOCWebController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTJSOCWebController.h; sourceTree = "<group>"; };
+		E97D681B2B73242700C12C81 /* CTJSOCWebController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTJSOCWebController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -308,6 +314,7 @@
 				E97D67642B707A7E00C12C81 /* login */,
 				E97D675E2B707A7E00C12C81 /* mine */,
 				E97D67592B707A7E00C12C81 /* user */,
+				E97D68162B7323C000C12C81 /* web */,
 			);
 			path = classes;
 			sourceTree = "<group>";
@@ -670,6 +677,17 @@
 			path = UIViewController;
 			sourceTree = "<group>";
 		};
+		E97D68162B7323C000C12C81 /* web */ = {
+			isa = PBXGroup;
+			children = (
+				E97D68172B73241800C12C81 /* CTWebController.h */,
+				E97D68182B73241800C12C81 /* CTWebController.m */,
+				E97D681A2B73242700C12C81 /* CTJSOCWebController.h */,
+				E97D681B2B73242700C12C81 /* CTJSOCWebController.m */,
+			);
+			path = web;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -867,6 +885,7 @@
 				E97D67CC2B707A7F00C12C81 /* CTBaseController.m in Sources */,
 				E97D67E82B707A7F00C12C81 /* CTMD5Encrypt.m in Sources */,
 				E97D67332B6FCC7700C12C81 /* main.m in Sources */,
+				E97D681C2B73242700C12C81 /* CTJSOCWebController.m in Sources */,
 				E97D68062B72502D00C12C81 /* UILabel+string.m in Sources */,
 				E97D68002B71323D00C12C81 /* UITableViewCell+identifier.m in Sources */,
 				E97D67D12B707A7F00C12C81 /* AppDelegate.m in Sources */,
@@ -878,6 +897,7 @@
 				E97D67DC2B707A7F00C12C81 /* UIButton+block.m in Sources */,
 				E97D67CD2B707A7F00C12C81 /* CTBaseModel.m in Sources */,
 				E97D67D22B707A7F00C12C81 /* AppDelegate+keyboard.m in Sources */,
+				E97D68192B73241800C12C81 /* CTWebController.m in Sources */,
 				E97D67F72B712CBD00C12C81 /* UIViewController+add.m in Sources */,
 				E97D68092B7250F300C12C81 /* UIImage+CT.m in Sources */,
 				E97D67D72B707A7F00C12C81 /* TADotView.m in Sources */,

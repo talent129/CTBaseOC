@@ -8,9 +8,6 @@
 
 #import "CTNetService.h"
 #import "CTHTTPSessionManager.h"
-#import <Reachability/Reachability.h>
-#import "CTEnvTool.h"
-#import "CTUserManager.h"
 #import "CTLoginController.h"
 #import "CTNavigationController.h"
 #import <YYModel/YYModel.h>
@@ -71,7 +68,7 @@
                     success(responseObject);
                 }
                 if ([responseObject[@"code"] intValue] != 200 && loadingView) {
-                    [loadingView makeToast:StrEmpty(responseObject[@"msg"])?@"失败":responseObject[@"msg"]];
+                    [CTToastUtil makeToastCenter:StrEmpty(responseObject[@"msg"])?@"失败":responseObject[@"msg"]];
                 }
             }
             [manager.session finishTasksAndInvalidate];
@@ -80,7 +77,7 @@
                 [MBProgressHUD dismissLoadingWithView:loadingView];
             }
             NSLog(@"+++++++++++get\nURL = %@\nparms = %@\nERROR = %@", task.currentRequest.URL, [params yy_modelToJSONString], error.localizedDescription);
-            [[CTTool getAppDelegate].window makeToast:StrEmpty(error.localizedDescription)? @"接口异常!":error.code == -1003? @"当前网络不通畅，请检查您的网络设置":error.localizedDescription];
+            [CTToastUtil makeToastCenter:StrEmpty(error.localizedDescription)? @"接口异常!":error.code == -1003? @"当前网络不通畅，请检查您的网络设置":error.localizedDescription];
             if (failure) {
                 failure(error);
             }
@@ -111,7 +108,7 @@
                     success(responseObject);
                 }
                 if ([responseObject[@"code"] integerValue] != 200 && loadingView) {
-                    [loadingView makeToast:StrEmpty(responseObject[@"msg"])?@"失败":responseObject[@"msg"]];
+                    [CTToastUtil makeToastCenter:StrEmpty(responseObject[@"msg"])?@"失败":responseObject[@"msg"]];
                 }
             }
             [manager.session finishTasksAndInvalidate];
@@ -120,8 +117,7 @@
                 [MBProgressHUD dismissLoadingWithView:loadingView];
             }
             NSLog(@"+++++++++++post\nURL = %@\nparms = %@\nERROR = %@", task.currentRequest.URL, [params yy_modelToJSONString], error.localizedDescription);
-            
-            [[CTTool getAppDelegate].window makeToast:StrEmpty(error.localizedDescription)? @"接口异常!":error.code == -1003? @"当前网络不通畅，请检查您的网络设置":error.localizedDescription];
+            [CTToastUtil makeToastCenter:StrEmpty(error.localizedDescription)? @"接口异常!":error.code == -1003? @"当前网络不通畅，请检查您的网络设置":error.localizedDescription];
             if (failure) {
                 failure(error);
             }

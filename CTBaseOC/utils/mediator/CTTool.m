@@ -8,7 +8,6 @@
 
 #import "CTTool.h"
 #import <Reachability/Reachability.h>
-#import <RTRootNavigationController/RTRootNavigationController.h>
 #import <AVFoundation/AVCaptureDevice.h> // 相机权限
 #import <Photos/PHPhotoLibrary.h> // 相册权限
 #import <CoreLocation/CoreLocation.h> // 位置权限

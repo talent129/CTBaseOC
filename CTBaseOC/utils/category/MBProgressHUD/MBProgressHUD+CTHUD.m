@@ -7,7 +7,6 @@
 //
 
 #import "MBProgressHUD+CTHUD.h"
-#import "CTTool.h"
 
 @implementation MBProgressHUD (CTHUD)
 
