@@ -9,12 +9,13 @@
 #import "CTIndexController.h"
 #import "CTDemoModel.h"
 #import "CTDemoCell.h"
+#import "CTIndexBannerView.h"
 
-@interface CTIndexController ()<UITableViewDelegate, UITableViewDataSource>
+@interface CTIndexController ()<UITableViewDelegate, UITableViewDataSource, CTIndexBannerViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, assign) BOOL isFirst;
-@property (nonatomic, strong) UIView *headerView;
+@property (nonatomic, strong) CTIndexBannerView *bannerView;
 
 @end
 
@@ -34,27 +35,17 @@
         _tableView.emptyDataSetSource = self;
         _tableView.emptyDataSetDelegate = self;
         
-        _tableView.tableHeaderView = self.headerView;
+        _tableView.tableHeaderView = self.bannerView;
     }
     return _tableView;
 }
 
-- (UIView *)headerView {
-    if (!_headerView) {
-        _headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_Width, 100)];
-        _headerView.backgroundColor = [UIColor randomColor];
-        
-        UILabel *titleL = [UILabel new];
-        titleL.text = @"This is header";
-        titleL.textColor = [UIColor themeColor];
-        titleL.font = [UIFont fontMedium16];
-        titleL.textAlignment = NSTextAlignmentCenter;
-        [_headerView addSubview:titleL];
-        [titleL mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.center.equalTo(_headerView);
-        }];
+- (CTIndexBannerView *)bannerView {
+    if (!_bannerView) {
+        _bannerView = [[CTIndexBannerView alloc] init];
+        _bannerView.bannerDelegate = self;
     }
-    return _headerView;
+    return _bannerView;
 }
 
 - (void)viewDidLoad {
@@ -77,6 +68,10 @@
         CTDemoModel *model = [CTDemoModel yy_modelWithDictionary:dicT];
         [self.dataArray addObject:model];
     }
+    
+    // banner
+    self.bannerView.bannerList = @[@"https://t7.baidu.com/it/u=1076097100,3808793036&fm=193&f=GIF", @"https://t7.baidu.com/it/u=3013393994,903593432&fm=193&f=GIF", @"https://t7.baidu.com/it/u=2587978747,4268841661&fm=193&f=GIF"];
+    
     [self.tableView reloadData];
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -160,6 +155,11 @@
 
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
     return nil;
+}
+
+#pragma mark -CTIndexBannerViewDelegate
+- (void)didSelectItemAtIndex:(NSUInteger)idx {
+    NSLog(@"===> %ld", idx);
 }
 
 @end
