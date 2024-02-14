@@ -18,6 +18,12 @@ PODS:
   - DZNEmptyDataSet (1.8.1)
   - FSCalendar (2.8.4)
   - IQKeyboardManager (6.5.10)
+  - JXCategoryView (1.6.1)
+  - JXPagingView (2.1.2):
+    - JXPagingView/Pager (= 2.1.2)
+    - JXPagingView/Paging (= 2.1.2)
+  - JXPagingView/Pager (2.1.2)
+  - JXPagingView/Paging (2.1.2)
   - LLNestedTableView (0.2.0)
   - Masonry (1.1.0)
   - MBProgressHUD (1.2.0)
@@ -44,6 +50,8 @@ DEPENDENCIES:
   - DZNEmptyDataSet (~> 1.8.1)
   - FSCalendar (~> 2.8.4)
   - IQKeyboardManager (~> 6.5.10)
+  - JXCategoryView (~> 1.6.1)
+  - JXPagingView (~> 2.1.2)
   - LLNestedTableView (~> 0.2.0)
   - Masonry (~> 1.1.0)
   - MBProgressHUD (~> 1.2.0)
@@ -67,6 +75,8 @@ SPEC REPOS:
     - DZNEmptyDataSet
     - FSCalendar
     - IQKeyboardManager
+    - JXCategoryView
+    - JXPagingView
     - LLNestedTableView
     - Masonry
     - MBProgressHUD
@@ -89,6 +99,8 @@ SPEC CHECKSUMS:
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   FSCalendar: 2d1d0d9398f12d439f55c1fe0f01525b151b8260
   IQKeyboardManager: 45a1fa55c1a5b02c61ac0fd7fd5b62bb4ad20d97
+  JXCategoryView: 7b1ee69ede4843c581688afe84d0f047723262f2
+  JXPagingView: 90924b364a2ff7e94db534fad1fa50925ff69ee4
   LLNestedTableView: 2f9236519445d805cd375fba612065d75ece3d10
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
@@ -105,6 +117,6 @@ SPEC CHECKSUMS:
   YYStarView: 88da305c4e86bc2468758e9313f2d25cce4f3ba3
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 0769520ac1e88ff3763d70a51a15cfda51b02c81
+PODFILE CHECKSUM: dcf06561d2866be2f30abce28c40b4e1c605bc61
 
 COCOAPODS: 1.12.1

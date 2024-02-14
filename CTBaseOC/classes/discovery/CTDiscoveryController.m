@@ -7,6 +7,7 @@
 //
 
 #import "CTDiscoveryController.h"
+#import "CTPagerDemoController.h"
 
 @interface CTDiscoveryController ()
 
@@ -39,6 +40,7 @@
     
     self.title = @"发现";
     self.view.backgroundColor = [UIColor appColorWhite];
+    [self addNavigationTitleItem:@"JXPager使用" tintColor:[UIColor appColorWhite] withLeft:NO withTarget:self withAction:@selector(pagerClick)];
     [self setupUI];
 }
 
@@ -134,6 +136,11 @@
         make.centerX.equalTo(self.contentView);
         make.bottom.mas_equalTo(-10);
     }];
+}
+
+- (void)pagerClick {
+    CTPagerDemoController *vc = [CTPagerDemoController new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end

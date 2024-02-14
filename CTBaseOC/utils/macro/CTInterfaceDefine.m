@@ -23,6 +23,8 @@ NSString *const kLoginByPwd = @"";
 ///退出登录 get
 NSString *const kLogOut = @"/user/app/logout";
 
+NSString *const kDemo = @"/demo";
+
 @implementation CTInterfaceDefine
 
 @end

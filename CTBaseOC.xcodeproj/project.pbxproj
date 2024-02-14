@@ -18,7 +18,6 @@
 		E97D67C72B707A7F00C12C81 /* CTUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E97D675A2B707A7E00C12C81 /* CTUserManager.m */; };
 		E97D67C82B707A7F00C12C81 /* CTUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E97D675B2B707A7E00C12C81 /* CTUserModel.m */; };
 		E97D67C92B707A7F00C12C81 /* CTMineController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97D675F2B707A7E00C12C81 /* CTMineController.m */; };
-		E97D67CA2B707A7F00C12C81 /* CTIndexController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97D67632B707A7E00C12C81 /* CTIndexController.m */; };
 		E97D67CB2B707A7F00C12C81 /* CTLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97D67652B707A7E00C12C81 /* CTLoginController.m */; };
 		E97D67CC2B707A7F00C12C81 /* CTBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97D67692B707A7E00C12C81 /* CTBaseController.m */; };
 		E97D67CD2B707A7F00C12C81 /* CTBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E97D676A2B707A7E00C12C81 /* CTBaseModel.m */; };
@@ -67,6 +66,10 @@
 		E97D68192B73241800C12C81 /* CTWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97D68182B73241800C12C81 /* CTWebController.m */; };
 		E97D681C2B73242700C12C81 /* CTJSOCWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97D681B2B73242700C12C81 /* CTJSOCWebController.m */; };
 		E97D681F2B7359DB00C12C81 /* CTSettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97D681E2B7359DB00C12C81 /* CTSettingsController.m */; };
+		E9B79E222B7380D000DD3F95 /* CTPagerDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B79E212B7380D000DD3F95 /* CTPagerDemoController.m */; };
+		E9B79E282B7381E500DD3F95 /* CTIndexController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B79E252B7381E500DD3F95 /* CTIndexController.m */; };
+		E9B79E2B2B7381F700DD3F95 /* CTDemoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B79E2A2B7381F700DD3F95 /* CTDemoModel.m */; };
+		E9B79E2E2B73820400DD3F95 /* CTDemoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B79E2D2B73820400DD3F95 /* CTDemoCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,8 +111,6 @@
 		E97D675D2B707A7E00C12C81 /* CTUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTUserModel.h; sourceTree = "<group>"; };
 		E97D675F2B707A7E00C12C81 /* CTMineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTMineController.m; sourceTree = "<group>"; };
 		E97D67602B707A7E00C12C81 /* CTMineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTMineController.h; sourceTree = "<group>"; };
-		E97D67622B707A7E00C12C81 /* CTIndexController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTIndexController.h; sourceTree = "<group>"; };
-		E97D67632B707A7E00C12C81 /* CTIndexController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTIndexController.m; sourceTree = "<group>"; };
 		E97D67652B707A7E00C12C81 /* CTLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTLoginController.m; sourceTree = "<group>"; };
 		E97D67662B707A7E00C12C81 /* CTLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTLoginController.h; sourceTree = "<group>"; };
 		E97D67682B707A7E00C12C81 /* CTNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTNavigationController.h; sourceTree = "<group>"; };
@@ -213,6 +214,14 @@
 		E97D681B2B73242700C12C81 /* CTJSOCWebController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTJSOCWebController.m; sourceTree = "<group>"; };
 		E97D681D2B7359DB00C12C81 /* CTSettingsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTSettingsController.h; sourceTree = "<group>"; };
 		E97D681E2B7359DB00C12C81 /* CTSettingsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTSettingsController.m; sourceTree = "<group>"; };
+		E9B79E202B7380D000DD3F95 /* CTPagerDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTPagerDemoController.h; sourceTree = "<group>"; };
+		E9B79E212B7380D000DD3F95 /* CTPagerDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTPagerDemoController.m; sourceTree = "<group>"; };
+		E9B79E242B7381E500DD3F95 /* CTIndexController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTIndexController.h; sourceTree = "<group>"; };
+		E9B79E252B7381E500DD3F95 /* CTIndexController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTIndexController.m; sourceTree = "<group>"; };
+		E9B79E292B7381F700DD3F95 /* CTDemoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTDemoModel.h; sourceTree = "<group>"; };
+		E9B79E2A2B7381F700DD3F95 /* CTDemoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTDemoModel.m; sourceTree = "<group>"; };
+		E9B79E2C2B73820400DD3F95 /* CTDemoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTDemoCell.h; sourceTree = "<group>"; };
+		E9B79E2D2B73820400DD3F95 /* CTDemoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTDemoCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -327,6 +336,8 @@
 			children = (
 				E97D67572B707A7E00C12C81 /* CTDiscoveryController.h */,
 				E97D67582B707A7E00C12C81 /* CTDiscoveryController.m */,
+				E9B79E202B7380D000DD3F95 /* CTPagerDemoController.h */,
+				E9B79E212B7380D000DD3F95 /* CTPagerDemoController.m */,
 			);
 			path = discovery;
 			sourceTree = "<group>";
@@ -356,8 +367,9 @@
 		E97D67612B707A7E00C12C81 /* index */ = {
 			isa = PBXGroup;
 			children = (
-				E97D67622B707A7E00C12C81 /* CTIndexController.h */,
-				E97D67632B707A7E00C12C81 /* CTIndexController.m */,
+				E9B79E232B7381E500DD3F95 /* controller */,
+				E9B79E262B7381E500DD3F95 /* model */,
+				E9B79E272B7381E500DD3F95 /* view */,
 			);
 			path = index;
 			sourceTree = "<group>";
@@ -693,6 +705,33 @@
 			path = web;
 			sourceTree = "<group>";
 		};
+		E9B79E232B7381E500DD3F95 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				E9B79E242B7381E500DD3F95 /* CTIndexController.h */,
+				E9B79E252B7381E500DD3F95 /* CTIndexController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		E9B79E262B7381E500DD3F95 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				E9B79E292B7381F700DD3F95 /* CTDemoModel.h */,
+				E9B79E2A2B7381F700DD3F95 /* CTDemoModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		E9B79E272B7381E500DD3F95 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				E9B79E2C2B73820400DD3F95 /* CTDemoCell.h */,
+				E9B79E2D2B73820400DD3F95 /* CTDemoCell.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -873,9 +912,11 @@
 				E97D67F02B712AAF00C12C81 /* UIButton+rapid.m in Sources */,
 				E97D67C92B707A7F00C12C81 /* CTMineController.m in Sources */,
 				E97D67FA2B712E5200C12C81 /* UIView+ext.m in Sources */,
+				E9B79E2B2B7381F700DD3F95 /* CTDemoModel.m in Sources */,
 				E97D67DF2B707A7F00C12C81 /* NSString+CT.m in Sources */,
 				E97D67E32B707A7F00C12C81 /* CTNetService.m in Sources */,
 				E97D67E62B707A7F00C12C81 /* CTInterfaceDefine.m in Sources */,
+				E9B79E282B7381E500DD3F95 /* CTIndexController.m in Sources */,
 				E97D68032B71329400C12C81 /* UITableView+clear.m in Sources */,
 				E97D67EA2B707A7F00C12C81 /* CTToastUtil.m in Sources */,
 				E97D680C2B72515100C12C81 /* UIFont+App.m in Sources */,
@@ -898,6 +939,7 @@
 				E97D67E12B707A7F00C12C81 /* NSObject+CTLog.m in Sources */,
 				E97D67E92B707A7F00C12C81 /* CTTool.m in Sources */,
 				E97D67E72B707A7F00C12C81 /* CTConfiguration.m in Sources */,
+				E9B79E2E2B73820400DD3F95 /* CTDemoCell.m in Sources */,
 				E97D67DB2B707A7F00C12C81 /* GTMBase64.m in Sources */,
 				E97D67D92B707A7F00C12C81 /* TAAnimatedDotView.m in Sources */,
 				E97D67DC2B707A7F00C12C81 /* UIButton+block.m in Sources */,
@@ -912,8 +954,8 @@
 				E97D67D02B707A7F00C12C81 /* AppDelegate+main.m in Sources */,
 				E97D67C82B707A7F00C12C81 /* CTUserModel.m in Sources */,
 				E97D67E52B707A7F00C12C81 /* AES128Util.m in Sources */,
+				E9B79E222B7380D000DD3F95 /* CTPagerDemoController.m in Sources */,
 				E97D67E02B707A7F00C12C81 /* MBProgressHUD+CTHUD.m in Sources */,
-				E97D67CA2B707A7F00C12C81 /* CTIndexController.m in Sources */,
 				E97D67D52B707A7F00C12C81 /* UIView+SDExtension.m in Sources */,
 				E97D67D82B707A7F00C12C81 /* TAPageControl.m in Sources */,
 				E97D68152B7274A400C12C81 /* CTPhotoTake.m in Sources */,

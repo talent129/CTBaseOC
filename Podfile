@@ -29,6 +29,9 @@ target 'CTBaseOC' do
 #  pod 'AMap2DMap', '~> 5.6.1' # 高德
 #  pod 'AMapLocation', '~> 2.8.0' # 高德定位
 #  pod 'AMapSearch', '~> 8.1.0' #地理编码
+
+  pod 'JXPagingView', '~> 2.1.2'
+  pod 'JXCategoryView', '~> 1.6.1'
   pod 'SGQRCode', '~> 3.5.1' #二维码扫描
   # 友盟
 #  pod 'UMCommon' # 基础组件

@@ -7,7 +7,6 @@
 //
 
 #import "CTBaseModel.h"
-#import <YYModel/YYModel.h>
 
 @implementation CTBaseModel
 

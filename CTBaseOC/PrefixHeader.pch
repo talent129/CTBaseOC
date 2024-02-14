@@ -29,5 +29,6 @@
 #import "UIImageView+WebCache.h"
 #import "CTNavigationController.h"
 #import <RTRootNavigationController/RTRootNavigationController.h>
+#import <YYModel/YYModel.h>
 
 #endif /* PrefixHeader_pch */
