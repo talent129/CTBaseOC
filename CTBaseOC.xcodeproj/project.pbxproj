@@ -71,6 +71,12 @@
 		E9B79E362B7CFBC700DD3F95 /* CTPagerDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B79E302B7CFBC700DD3F95 /* CTPagerDemoController.m */; };
 		E9B79E372B7CFBC700DD3F95 /* CTDiscoveryController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B79E332B7CFBC700DD3F95 /* CTDiscoveryController.m */; };
 		E9B79E3A2B7CFE1B00DD3F95 /* CTIndexBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B79E392B7CFE1B00DD3F95 /* CTIndexBannerView.m */; };
+		E9B79E402B7DB66A00DD3F95 /* CTPagerHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B79E3F2B7DB66A00DD3F95 /* CTPagerHeaderView.m */; };
+		E9B79E432B7DD10300DD3F95 /* CTSubPagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B79E422B7DD10300DD3F95 /* CTSubPagerController.m */; };
+		E9B79E452B7DD30B00DD3F95 /* poemList.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9B79E442B7DD30B00DD3F95 /* poemList.plist */; };
+		E9B79E482B7DD9E600DD3F95 /* CTPagerDemo2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B79E472B7DD9E600DD3F95 /* CTPagerDemo2Controller.m */; };
+		E9B79E4B2B7DDB9300DD3F95 /* CTCategoryTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B79E4A2B7DDB9300DD3F95 /* CTCategoryTitleView.m */; };
+		E9B79E4E2B7DDBBA00DD3F95 /* CTCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B79E4D2B7DDBBA00DD3F95 /* CTCategoryCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -225,6 +231,17 @@
 		E9B79E332B7CFBC700DD3F95 /* CTDiscoveryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTDiscoveryController.m; sourceTree = "<group>"; };
 		E9B79E382B7CFE1B00DD3F95 /* CTIndexBannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTIndexBannerView.h; sourceTree = "<group>"; };
 		E9B79E392B7CFE1B00DD3F95 /* CTIndexBannerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTIndexBannerView.m; sourceTree = "<group>"; };
+		E9B79E3E2B7DB66A00DD3F95 /* CTPagerHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTPagerHeaderView.h; sourceTree = "<group>"; };
+		E9B79E3F2B7DB66A00DD3F95 /* CTPagerHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTPagerHeaderView.m; sourceTree = "<group>"; };
+		E9B79E412B7DD10300DD3F95 /* CTSubPagerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTSubPagerController.h; sourceTree = "<group>"; };
+		E9B79E422B7DD10300DD3F95 /* CTSubPagerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTSubPagerController.m; sourceTree = "<group>"; };
+		E9B79E442B7DD30B00DD3F95 /* poemList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = poemList.plist; sourceTree = "<group>"; };
+		E9B79E462B7DD9E600DD3F95 /* CTPagerDemo2Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTPagerDemo2Controller.h; sourceTree = "<group>"; };
+		E9B79E472B7DD9E600DD3F95 /* CTPagerDemo2Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTPagerDemo2Controller.m; sourceTree = "<group>"; };
+		E9B79E492B7DDB9300DD3F95 /* CTCategoryTitleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTCategoryTitleView.h; sourceTree = "<group>"; };
+		E9B79E4A2B7DDB9300DD3F95 /* CTCategoryTitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTCategoryTitleView.m; sourceTree = "<group>"; };
+		E9B79E4C2B7DDBBA00DD3F95 /* CTCategoryCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTCategoryCell.h; sourceTree = "<group>"; };
+		E9B79E4D2B7DDBBA00DD3F95 /* CTCategoryCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTCategoryCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -683,6 +700,7 @@
 				E97D672E2B6FCC7700C12C81 /* LaunchScreen.storyboard */,
 				E97D67322B6FCC7700C12C81 /* main.m */,
 				E97D67ED2B7080E500C12C81 /* PrefixHeader.pch */,
+				E9B79E442B7DD30B00DD3F95 /* poemList.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -743,6 +761,10 @@
 				E9B79E332B7CFBC700DD3F95 /* CTDiscoveryController.m */,
 				E9B79E322B7CFBC700DD3F95 /* CTPagerDemoController.h */,
 				E9B79E302B7CFBC700DD3F95 /* CTPagerDemoController.m */,
+				E9B79E412B7DD10300DD3F95 /* CTSubPagerController.h */,
+				E9B79E422B7DD10300DD3F95 /* CTSubPagerController.m */,
+				E9B79E462B7DD9E600DD3F95 /* CTPagerDemo2Controller.h */,
+				E9B79E472B7DD9E600DD3F95 /* CTPagerDemo2Controller.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -757,6 +779,12 @@
 		E9B79E352B7CFBC700DD3F95 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				E9B79E3E2B7DB66A00DD3F95 /* CTPagerHeaderView.h */,
+				E9B79E3F2B7DB66A00DD3F95 /* CTPagerHeaderView.m */,
+				E9B79E492B7DDB9300DD3F95 /* CTCategoryTitleView.h */,
+				E9B79E4A2B7DDB9300DD3F95 /* CTCategoryTitleView.m */,
+				E9B79E4C2B7DDBBA00DD3F95 /* CTCategoryCell.h */,
+				E9B79E4D2B7DDBBA00DD3F95 /* CTCategoryCell.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -869,6 +897,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E97D67302B6FCC7700C12C81 /* LaunchScreen.storyboard in Resources */,
+				E9B79E452B7DD30B00DD3F95 /* poemList.plist in Resources */,
 				E97D672D2B6FCC7700C12C81 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -961,11 +990,13 @@
 				E97D681F2B7359DB00C12C81 /* CTSettingsController.m in Sources */,
 				E97D67CC2B707A7F00C12C81 /* CTBaseController.m in Sources */,
 				E97D67E82B707A7F00C12C81 /* CTMD5Encrypt.m in Sources */,
+				E9B79E432B7DD10300DD3F95 /* CTSubPagerController.m in Sources */,
 				E97D67332B6FCC7700C12C81 /* main.m in Sources */,
 				E9B79E362B7CFBC700DD3F95 /* CTPagerDemoController.m in Sources */,
 				E97D681C2B73242700C12C81 /* CTJSOCWebController.m in Sources */,
 				E97D68062B72502D00C12C81 /* UILabel+string.m in Sources */,
 				E97D68002B71323D00C12C81 /* UITableViewCell+identifier.m in Sources */,
+				E9B79E482B7DD9E600DD3F95 /* CTPagerDemo2Controller.m in Sources */,
 				E97D67D12B707A7F00C12C81 /* AppDelegate.m in Sources */,
 				E97D67E12B707A7F00C12C81 /* NSObject+CTLog.m in Sources */,
 				E97D67E92B707A7F00C12C81 /* CTTool.m in Sources */,
@@ -974,6 +1005,7 @@
 				E9B79E2E2B73820400DD3F95 /* CTDemoCell.m in Sources */,
 				E97D67DB2B707A7F00C12C81 /* GTMBase64.m in Sources */,
 				E97D67D92B707A7F00C12C81 /* TAAnimatedDotView.m in Sources */,
+				E9B79E4B2B7DDB9300DD3F95 /* CTCategoryTitleView.m in Sources */,
 				E97D67DC2B707A7F00C12C81 /* UIButton+block.m in Sources */,
 				E97D67CD2B707A7F00C12C81 /* CTBaseModel.m in Sources */,
 				E97D67D22B707A7F00C12C81 /* AppDelegate+keyboard.m in Sources */,
@@ -984,6 +1016,7 @@
 				E97D67D32B707A7F00C12C81 /* AppDelegate+third.m in Sources */,
 				E97D67D02B707A7F00C12C81 /* AppDelegate+main.m in Sources */,
 				E97D67C82B707A7F00C12C81 /* CTUserModel.m in Sources */,
+				E9B79E4E2B7DDBBA00DD3F95 /* CTCategoryCell.m in Sources */,
 				E97D67E52B707A7F00C12C81 /* AES128Util.m in Sources */,
 				E97D67E02B707A7F00C12C81 /* MBProgressHUD+CTHUD.m in Sources */,
 				E97D67D52B707A7F00C12C81 /* UIView+SDExtension.m in Sources */,
@@ -993,6 +1026,7 @@
 				E97D67E22B707A7F00C12C81 /* NSDate+Extension.m in Sources */,
 				E97D67D42B707A7F00C12C81 /* SDCycleScrollView.m in Sources */,
 				E97D67D62B707A7F00C12C81 /* SDCollectionViewCell.m in Sources */,
+				E9B79E402B7DB66A00DD3F95 /* CTPagerHeaderView.m in Sources */,
 				E97D67DE2B707A7F00C12C81 /* UIColor+App.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

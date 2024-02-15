@@ -12,6 +12,8 @@
 
 @interface CTTabBarController ()<UITabBarControllerDelegate>
 
+@property (nonatomic, strong) CAShapeLayer *shapeLayer;
+
 @end
 
 @implementation CTTabBarController
@@ -24,6 +26,34 @@
     self.tabBar.translucent = NO;
     
     [self configControllers];
+}
+
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    [self addShapeLayer];
+}
+
+/// tabbar 阴影
+- (void)addShapeLayer {
+    CAShapeLayer *layer = [[CAShapeLayer alloc] init];
+    layer.path = [UIBezierPath bezierPathWithRoundedRect:self.tabBar.bounds byRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight cornerRadii:CGSizeMake(0, 0)].CGPath;
+    layer.fillColor = [UIColor appColorWhite].CGColor;
+    layer.shadowPath = [UIBezierPath bezierPathWithRoundedRect:self.tabBar.bounds cornerRadius:15].CGPath;
+    layer.shadowColor = [UIColor colorWithHexString:@"#999999" alpha:0.2].CGColor;
+    layer.shadowOpacity = 1;
+    layer.shadowRadius = 6;
+    layer.shadowOffset = CGSizeMake(0, -1);
+    layer.cornerRadius = 15;
+    
+    layer.shouldRasterize = true;
+    layer.rasterizationScale = [UIScreen mainScreen].scale;
+    
+    if (self.shapeLayer) {
+        [self.tabBar.layer replaceSublayer:self.shapeLayer with:layer];
+    } else {
+        [self.tabBar.layer insertSublayer:layer atIndex:0];
+    }
+    self.shapeLayer = layer;
 }
 
 - (void)configControllers {

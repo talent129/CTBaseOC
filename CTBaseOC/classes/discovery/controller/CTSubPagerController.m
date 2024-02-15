@@ -1,25 +1,23 @@
 //
-//  CTIndexController.m
-//  CTBaseOCFrameOne
+//  CTSubPagerController.m
+//  CTBaseOC
 //
-//  Created by Curtis on 2024/2/1.
+//  Created by Curtis on 2024/2/15.
 //  Copyright © 2024 CT. All rights reserved.
 //
 
-#import "CTIndexController.h"
-#import "CTDemoModel.h"
+#import "CTSubPagerController.h"
 #import "CTDemoCell.h"
-#import "CTIndexBannerView.h"
+#import "CTDemoModel.h"
 
-@interface CTIndexController ()<UITableViewDelegate, UITableViewDataSource, CTIndexBannerViewDelegate>
+@interface CTSubPagerController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
-@property (nonatomic, assign) BOOL isFirst;
-@property (nonatomic, strong) CTIndexBannerView *bannerView;
+@property (nonatomic, copy) void(^scrollCallback)(UIScrollView *scrollView);
 
 @end
 
-@implementation CTIndexController
+@implementation CTSubPagerController
 
 - (UITableView *)tableView {
     if (!_tableView) {
@@ -30,31 +28,18 @@
         _tableView.estimatedRowHeight = 100;
         _tableView.showsVerticalScrollIndicator = NO;
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-        _tableView.mj_header = self.ct_header;
+//        _tableView.mj_header = self.ct_header;
         _tableView.mj_footer = self.ct_footer;
         _tableView.emptyDataSetSource = self;
         _tableView.emptyDataSetDelegate = self;
-        
-        _tableView.tableHeaderView = self.bannerView;
     }
     return _tableView;
-}
-
-- (CTIndexBannerView *)bannerView {
-    if (!_bannerView) {
-        _bannerView = [[CTIndexBannerView alloc] init];
-        _bannerView.bannerDelegate = self;
-    }
-    return _bannerView;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.title = @"首页";
-    
-    self.isFirst = YES;
     [self setupUI];
     [self request];
 }
@@ -70,47 +55,14 @@
         [self.dataArray addObject:model];
     }
     
-    // banner
-    self.bannerView.bannerList = @[@"https://t7.baidu.com/it/u=1076097100,3808793036&fm=193&f=GIF", @"https://t7.baidu.com/it/u=3013393994,903593432&fm=193&f=GIF", @"https://t7.baidu.com/it/u=2587978747,4268841661&fm=193&f=GIF"];
-    
     [self.tableView reloadData];
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self endRefresh];
-    });
-    
-    /*
-    NSMutableDictionary *params = [NSMutableDictionary dictionary];
-    params[@"pageNum"] = [NSString stringWithFormat:@"%ld", self.pageNum];
-    params[@"pageSize"] = [NSString stringWithFormat:@"%d", kPageSize];
-    [CTNetService requestType:(RequestTypeGet) url:kDemo params:params loading:self.isFirst? self.view : nil success:^(id  _Nullable result) {
-        if ([result[@"code"] intValue] == 200) {
-            self.isFirst = NO;
-            if (self.pageNum == 1) {
-                [self.dataArray removeAllObjects];
-            }
-            NSArray *rows = result[@"rows"];
-            for (NSDictionary *dicT in rows) {
-                CTDemoModel *model = [CTDemoModel yy_modelWithDictionary:dicT];
-                [self.dataArray addObject:model];
-            }
-            [self.tableView reloadData];
-            
-            if (rows.count < kPageSize) {
-                [self endRefreshNoMoreData];
-            } else {
-                [self endRefresh];
-            }
-        } else {
-            [CTToastUtil makeToastCenter:result[@"msg"] withView:self.view];
-            [self.tableView reloadData];
-            [self endRefresh];
+        if (self.refreshFinishedBlock) {
+            self.refreshFinishedBlock();
         }
-    } failure:^(NSError * _Nullable error) {
-        [self.tableView reloadData];
-        [self endRefresh];
-    }];
-     */
+    });
 }
 
 - (void)setupUI {
@@ -158,9 +110,21 @@
     return nil;
 }
 
-#pragma mark -CTIndexBannerViewDelegate
-- (void)didSelectItemAtIndex:(NSUInteger)idx {
-    NSLog(@"===> %ld", idx);
+#pragma mark -JXPagerViewListViewDelegate
+- (UIView *)listView {
+    return self.view;
+}
+
+- (UIScrollView *)listScrollView {
+    return self.tableView;
+}
+
+- (void)listViewDidScrollCallback:(void (^)(UIScrollView *))callback {
+    self.scrollCallback = callback;
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    !self.scrollCallback ?: self.scrollCallback(scrollView);
 }
 
 @end
