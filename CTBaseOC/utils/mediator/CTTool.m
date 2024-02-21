@@ -129,11 +129,13 @@
     NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
     NSData *data = [userDefault objectForKey:key];
     
+    // 从二进制流读取对象
     id object = [NSKeyedUnarchiver unarchiveObjectWithData:data];
     return object;
 }
 
 + (void)setCustomObject:(id)obj forKey:(NSString *)key {
+    // 把对象写到二进制流中
     NSData *data = [NSKeyedArchiver archivedDataWithRootObject:obj];
     NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
     [self removeValueForKey:key];

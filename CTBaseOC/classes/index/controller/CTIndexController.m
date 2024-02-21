@@ -10,6 +10,7 @@
 #import "CTDemoModel.h"
 #import "CTDemoCell.h"
 #import "CTIndexBannerView.h"
+#import "CTCodeController.h"
 
 @interface CTIndexController ()<UITableViewDelegate, UITableViewDataSource, CTIndexBannerViewDelegate>
 
@@ -53,10 +54,16 @@
     // Do any additional setup after loading the view.
     
     self.title = @"首页";
+    [self addRightCornerItem:@"解归档" withTarget:self withAction:@selector(coding)];
     
     self.isFirst = YES;
     [self setupUI];
     [self request];
+}
+
+- (void)coding {
+    CTCodeController *vc = [CTCodeController new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)request {

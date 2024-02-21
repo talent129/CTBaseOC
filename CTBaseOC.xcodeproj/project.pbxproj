@@ -77,6 +77,7 @@
 		E9B79E482B7DD9E600DD3F95 /* CTPagerDemo2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B79E472B7DD9E600DD3F95 /* CTPagerDemo2Controller.m */; };
 		E9B79E4B2B7DDB9300DD3F95 /* CTCategoryTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B79E4A2B7DDB9300DD3F95 /* CTCategoryTitleView.m */; };
 		E9B79E4E2B7DDBBA00DD3F95 /* CTCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B79E4D2B7DDBBA00DD3F95 /* CTCategoryCell.m */; };
+		E9B79EE62B85D72D00DD3F95 /* CTCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B79EE52B85D72D00DD3F95 /* CTCodeController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -242,6 +243,8 @@
 		E9B79E4A2B7DDB9300DD3F95 /* CTCategoryTitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTCategoryTitleView.m; sourceTree = "<group>"; };
 		E9B79E4C2B7DDBBA00DD3F95 /* CTCategoryCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTCategoryCell.h; sourceTree = "<group>"; };
 		E9B79E4D2B7DDBBA00DD3F95 /* CTCategoryCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTCategoryCell.m; sourceTree = "<group>"; };
+		E9B79EE42B85D72D00DD3F95 /* CTCodeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTCodeController.h; sourceTree = "<group>"; };
+		E9B79EE52B85D72D00DD3F95 /* CTCodeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTCodeController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -730,6 +733,8 @@
 			children = (
 				E9B79E242B7381E500DD3F95 /* CTIndexController.h */,
 				E9B79E252B7381E500DD3F95 /* CTIndexController.m */,
+				E9B79EE42B85D72D00DD3F95 /* CTCodeController.h */,
+				E9B79EE52B85D72D00DD3F95 /* CTCodeController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -1000,6 +1005,7 @@
 				E97D67D12B707A7F00C12C81 /* AppDelegate.m in Sources */,
 				E97D67E12B707A7F00C12C81 /* NSObject+CTLog.m in Sources */,
 				E97D67E92B707A7F00C12C81 /* CTTool.m in Sources */,
+				E9B79EE62B85D72D00DD3F95 /* CTCodeController.m in Sources */,
 				E97D67E72B707A7F00C12C81 /* CTConfiguration.m in Sources */,
 				E9B79E3A2B7CFE1B00DD3F95 /* CTIndexBannerView.m in Sources */,
 				E9B79E2E2B73820400DD3F95 /* CTDemoCell.m in Sources */,
