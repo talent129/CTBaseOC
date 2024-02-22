@@ -53,6 +53,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    // Defaults to UIRectEdgeAll rootView从(0,0) 导航栏会遮挡视图
     self.edgesForExtendedLayout = UIRectEdgeNone;//不延伸
     self.extendedLayoutIncludesOpaqueBars = YES;
     
