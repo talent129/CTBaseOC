@@ -74,6 +74,10 @@
     }];
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [CTToastUtil makeToastCenter:@"toast测试"];
+}
+
 #pragma mark -loginBtnClick
 - (void)loginBtnClick {
     CTLoginController *loginVC = [CTLoginController new];
